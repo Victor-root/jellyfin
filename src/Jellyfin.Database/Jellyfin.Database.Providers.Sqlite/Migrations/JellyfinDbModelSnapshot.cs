@@ -861,6 +861,18 @@ namespace Jellyfin.Server.Implementations.Migrations
                     b.Property<string>("Comment")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("CropBottom")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("CropLeft")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("CropRight")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("CropTop")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("DvBlSignalCompatibilityId")
                         .HasColumnType("INTEGER");
 
